@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import logo from "./logo.svg";
+import Footer from "./img/footer.png";
 import "./style/App.css";
 
 class App extends Component {
@@ -15,7 +16,7 @@ class App extends Component {
           <Container>
             <Route exact path="/" component={Home} />
           </Container>
-          <footer>
+          <footer style={{ backgroundImage: "url(" + Footer + ")" }}>
             <Container>
               <p>(C) 2019 Brandon Dyer</p>
               <ul>
