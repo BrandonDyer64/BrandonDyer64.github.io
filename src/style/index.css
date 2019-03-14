@@ -1,3 +1,19 @@
+:root {
+  --green: #1abc9c;
+  --green-dark: #16a085;
+  --blue: #3498db;
+  --blue-dark: #2980b9;
+  --primary: var(--green);
+  --primary-dark: var(--green-dark);
+  --secondary: var(--blue);
+  --secondary-dark: var(--blue-dark);
+  --dark: #2c3e50;
+}
+
+html {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +22,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dark);
+  color: white;
+  min-height: 100%;
 }
 
 code {

@@ -1,0 +1,99 @@
+.App {
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-dark);
+  border-color: var(--secondary-dark);
+}
+
+.btn-outline-secondary {
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark) !important;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #00000000;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: #00000000;
+}
+
+.form-control {
+  border: none;
+}
+
+.card {
+  background-color: var(--primary);
+  border: none;
+}
+
+code {
+  color: #9b59b6;
+}
+
+footer {
+  margin-top: 6rem;
+  padding-top: 6rem;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 18rem;
+  width: 100%;
+  background-image: url("../img/footer.png");
+  background-position: center 0;
+  background-size: cover;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
