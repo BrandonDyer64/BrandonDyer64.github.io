@@ -88,6 +88,13 @@ footer {
   background-size: cover;
 }
 
+@media only screen and (max-width: 600px) {
+  footer {
+    margin-top: 3rem;
+    padding-top: 3rem;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

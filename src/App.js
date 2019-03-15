@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import logo from "./logo.svg";
@@ -12,16 +12,27 @@ class App extends Component {
     return (
       <Router>
         <div className="App" style={{ minHeight: "100%" }}>
-          <Route path="/" component={Navbar} />
+          <Navbar />
           <Container>
             <Route exact path="/" component={Home} />
           </Container>
           <footer style={{ backgroundImage: "url(" + Footer + ")" }}>
             <Container>
-              <p>(C) 2019 Brandon Dyer</p>
-              <ul>
-                <li>Home</li>
-              </ul>
+              <p>© 2019 Brandon Dyer</p>
+              <Row>
+                <Col md={8}>
+                  <p style={{ fontSize: "8pt" }}>
+                    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+                    KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+                    WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                    PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS
+                    OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+                    OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+                    OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+                    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+                  </p>
+                </Col>
+              </Row>
             </Container>
           </footer>
         </div>
